@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<title>My Chatbot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="chat-container">
+<header class="chat-header">
+<div class="bot-avatar">🤖</div>
+<div><h1>My Chatbot</h1><p>AI Assistant <span class="online-dot"></span></p></div>
+<div class="usage" id="usage-counter">0 / 50 today</div>
+</header>
+<div id="chat-box" aria-live="polite"><div class="bot-message">Hello! How can I help you?</div></div>
+<form class="input-area" id="chat-form">
+<input type="text" id="user-input" autocomplete="off" placeholder="Type your message..." aria-label="Message">
+<button type="submit" id="send-btn">Send</button>
+</form>
+<p class="quota-note">Daily app limit: 50 messages. Gemini API quota may still apply.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
